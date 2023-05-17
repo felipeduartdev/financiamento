@@ -7,6 +7,11 @@ var
 SENHA,INFORMADOSENHA:INTEIRO
 LOGIN,INFORMADOLOGIN:CARACTERE
 objeto3,objeto4,objeto5,objeto6,objeto7,objeto8,objeto9,objeto10:caractere
+ACESSO:INTEIRO
+ACESSO2: INTEIRO
+VEICULO, VENDA, CARACTERISTICAS, ANO: CARACTERE
+VALOR:CARACTERE
+
 inicio
 // Seção de Comandos
 //CADASTRO DE LOGIN E SENHA
@@ -37,6 +42,41 @@ inicio
     objeto10<-"gtr r34 ano 2023, blindado, cor prata, valor R$950.000.00"
 
     //FIM DO CADASTRO DE VEICULOS
+
+   SENAO
+
+         SE ACESSO = 2 ENTAO
+
+      ESCREVAL("INFORME O NOME DO VEICULOS")
+            LEIA(VEICULO)
+            ESCREVAL("INFORME O ANO DO VEICULO")
+            LEIA(ANO)
+            ESCREVAL("INFORME O CARACTERISTICAS DO VEICLO")
+            LEIA(CARACTERISTICAS)
+            ESCREVAL("INFORME O  VALOR DO VEICULOS")
+            LEIA(VALOR)
+            ESCREVAL("******************")
+            ESCREVAL("VEICULO CADASTRADO")
+            ESCREVAL("VEICULO", VEICULO)
+            ESCREVAL("ANO", ANO)
+            ESCREVAL("CARACTERISTICAS", CARACTERISTICAS)
+            ESCREVAL("VALOR", VALOR)
+            ESCREVAL(" ***********************************")
+
+          SENAO
+            SE ACESSO = 3 ENTAO
+               //EM CONSTRUCAO
+                   ESCREVAL(" EM CONSTRUCAO")
+
+            FIMSE
+         FIMSE
+      FIMSE
+
+   ATE ACESSO = 10
+
+
+
+
 
 
   
